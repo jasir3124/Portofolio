@@ -10,7 +10,7 @@ export default function Layout() {
 
             {/* Foreground content */}
             <Navbar />
-            <main className="relative z-10 p-4">
+            <main className="relative p-4">
                 <Outlet />
             </main>
         </div>
