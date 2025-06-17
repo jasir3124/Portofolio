@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        maroon: "#800000",
         gold: "#FFB22C",
+        maroon: "#800000",
         white: "#FFFFFF",
         black: "#000000",
       },
