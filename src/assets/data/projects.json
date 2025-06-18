@@ -1,5 +1,12 @@
 [
     {
+        "title": "OrderEase",
+        "description": "Full-stack car rental system built as a final course project. Includes user registration/login, car browsing with filters, single-rental restrictions, and real-time availability updates. Features paginated search, an admin dashboard with visualized data (graphs, charts), and basic user/car management. Built with PHP & MySQL — now archived as I’ve moved to the MERN stack.",
+        "image": "src/assets/project-images/OrderEase/Hero-Section.png",
+        "link": "#",
+        "stack": ["MERN", "Redux", "Tailwind", "Framer Motion"]
+    },
+    {
         "title": "WheelseAway",
         "description": "Full-stack car rental system built as a final course project. Includes user registration/login, car browsing with filters, single-rental restrictions, and real-time availability updates. Features paginated search, an admin dashboard with visualized data (graphs, charts), and basic user/car management. Built with PHP & MySQL — now archived as I’ve moved to the MERN stack.",
         "image": "src/assets/project-images/car-rental-System/Hero-Section-image.png",
@@ -9,7 +16,7 @@
     {
         "title": "Food App",
         "description": "A recipe discovery app with an intuitive interface for browsing dishes, viewing ingredients, and following step-by-step cooking guides. Designed to make the culinary journey easy, informative, and enjoyable.",
-        "image": "src/assets/project-images/food-app/Hero-Secion.png",
+        "image": "src/assets/project-images/food-app/Hero-Section.png",
         "link": "https://github.com/jasir3124/Food-app",
         "stack": ["React.JS", "SASS", "Bootstrap"]
     },

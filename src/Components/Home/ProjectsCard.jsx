@@ -1,24 +1,25 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const ProjectsCard = (props) => {
+    const { index = 0 } = props;
     return (
-        <div className="border-4 border-black rounded-lg shadow-[8px_8px_0_0_#800000] p-4 bg-white hover:shadow-[12px_12px_0_0_#FFB22C] transition">
-            {/* Image */}
+        <motion.div
+            className="border-4 border-black rounded-lg shadow-[8px_8px_0_0_#800000] p-4 bg-white hover:shadow-[12px_12px_0_0_#FFB22C] transition"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, ease: 'anticipate', delay: index * 0.15 }}
+        >
             <img
                 src={props.image}
                 alt={props.title}
                 className="w-full h-40 object-cover border-b-2 border-black mb-2"
             />
-
-            {/* Title */}
             <h3 className="text-3xl font-black uppercase mb-1 tracking-wide font-Japanenglish">
                 {props.title}
             </h3>
-
-            {/* Description */}
             <p className="text-md font-sans line-clamp-2 mb-2">{props.description}</p>
-
-            {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-3">
                 {props.stack?.map((tech, index) => (
                     <span
@@ -29,15 +30,13 @@ const ProjectsCard = (props) => {
                     </span>
                 ))}
             </div>
-
-            {/* Link */}
             <a
                 href={props.link}
                 className="inline-block text-sm font-bold bg-black text-white px-3 py-1 rounded-full shadow hover:bg-[#FFB22C] hover:text-black transition"
             >
                 View Project!
             </a>
-        </div>
+        </motion.div>
     );
 };
 
