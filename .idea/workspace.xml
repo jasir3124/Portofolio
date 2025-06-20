@@ -5,45 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51b292e0-9951-4ca3-9f3e-b1bf44fbdda9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/AboutSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/about/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/projects/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portofolio.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/contact/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/HeroSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/HeroSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/ProjectsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/ProjectsCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/ProjectsSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/ProjectsSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/SkillsSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/SkillsSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/shared/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shared/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/About.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Contact.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Projects.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/data/projects.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/ZeroCool.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/ZeroMojo.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/20250613_2051_Anime Style Portrait_remix_01jxna1k54fk28z9tn75gn8kyc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/project-images/Adze-movie-website/Hero-Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/project-images/OrderEase/Hero-Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/project-images/car-rental-System/Hero-Section-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/project-images/food-app/Hero-Section.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +19,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jasir3124"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jasir3124&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jasir3124/Portofolio.git",
-    "accountId": "8e26c7d6-e6ec-4389-bde5-94d63b4f2759"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jasir3124/Portofolio.git&quot;,
+    &quot;accountId&quot;: &quot;8e26c7d6-e6ec-4389-bde5-94d63b4f2759&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2ygpS4TtElmtuymxrAnaETIH0oN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -80,6 +46,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
     "last_opened_file_path": "C:/Users/Admin/Documents/programming/projekete/projects/portofolio/src/app/projects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -98,8 +66,27 @@
       <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio\src\app\api\contact" />
+      <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio\src\app" />
+      <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio" />
+      <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio\src\pages\api\contact" />
       <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -116,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750266066869</updated>
       <workItem from="1750266068670" duration="7974000" />
+      <workItem from="1750448992006" duration="5846000" />
     </task>
     <servers />
   </component>
