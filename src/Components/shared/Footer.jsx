@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
+import { FaGithub, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -12,13 +12,13 @@ const Footer = () => {
                 </div>
 
                 <div className="flex gap-6">
-                    <Link href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[#B22222] hover:text-[#7B1212] transition-colors">
-                        <FaInstagram size={24} />
+                    <Link href="https://github.com/jasir3124" target="_blank" rel="noopener noreferrer" aria-label="github" className="text-[#B22222] hover:text-[#7B1212] transition-colors">
+                        <FaGithub size={24} />
                     </Link>
-                    <Link href="https://twitter.com/your_username" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-[#B22222] hover:text-[#7B1212] transition-colors">
+                    <Link href="https://x.com/Jasir28616447" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-[#B22222] hover:text-[#7B1212] transition-colors">
                         <FaXTwitter size={24} />
                     </Link>
-                    <Link href="https://linkedin.com/in/your_username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-[#B22222] hover:text-[#7B1212] transition-colors">
+                    <Link href="https://www.linkedin.com/in/jasir-limani-702663178" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-[#B22222] hover:text-[#7B1212] transition-colors">
                         <FaLinkedinIn size={24} />
                     </Link>
                 </div>
