@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CgArrowLongRight } from "react-icons/cg";
 
 import projects from '@/data/projects.json'
-import ProjectsCard from './ProjectsCard'
+import ProjectsCard from '../shared/ProjectsCard'
 
 
 const ProjectsSection = () => {

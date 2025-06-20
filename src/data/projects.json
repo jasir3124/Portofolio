@@ -3,28 +3,40 @@
         "title": "OrderEase",
         "description": "Full-stack car rental system built as a final course project. Includes user registration/login, car browsing with filters, single-rental restrictions, and real-time availability updates. Features paginated search, an admin dashboard with visualized data (graphs, charts), and basic user/car management. Built with PHP & MySQL — now archived as I’ve moved to the MERN stack.",
         "image": "/project-images/OrderEase/Hero-Section.png",
-        "link": "#",
-        "stack": ["MERN", "Redux", "Tailwind", "Framer Motion"]
+        "projectImages": [],
+        "github": "",
+        "stack": ["MERN", "Redux", "Tailwind", "Framer Motion"],
+        "status": "working",
+        "projectSize": "big"
     },
     {
         "title": "WheelseAway",
         "description": "Full-stack car rental system built as a final course project. Includes user registration/login, car browsing with filters, single-rental restrictions, and real-time availability updates. Features paginated search, an admin dashboard with visualized data (graphs, charts), and basic user/car management. Built with PHP & MySQL — now archived as I’ve moved to the MERN stack.",
         "image": "/project-images/car-rental-System/Hero-Section.png",
-        "link": "https://github.com/jasir3124/WheelseAway-Car-rental-system",
-        "stack": ["PHP", "MySQL", "SASS", "Bootstrap"]
+        "projectImages": [],
+        "github": "https://github.com/jasir3124/WheelseAway-Car-rental-system",
+        "stack": ["PHP", "MySQL", "SASS", "Bootstrap"],
+        "status": "finished",
+        "projectSize": "big"
     },
     {
         "title": "Food App",
         "description": "A recipe discovery app with an intuitive interface for browsing dishes, viewing ingredients, and following step-by-step cooking guides. Designed to make the culinary journey easy, informative, and enjoyable.",
         "image": "/project-images/food-app/Hero-Section.png",
-        "link": "https://github.com/jasir3124/Food-app",
-        "stack": ["React.JS", "SASS", "Bootstrap"]
+        "projectImages": [],
+        "github": "https://github.com/jasir3124/Food-app",
+        "stack": ["React.JS", "SASS", "Bootstrap"],
+        "status": "finished",
+        "projectSize": "small"
     },
     {
         "title": "Adze Movies",
         "description": "A lightweight movie browser that lets users search by title, filter by categories, and save or unsave favorite films. Built for speed and simplicity — ideal for practicing dynamic UI and state management.",
         "image": "/project-images/Adze-movie-website/Hero-Section.png",
-        "link": "https://github.com/jasir3124/Movie-website",
-        "stack": ["HTML", "JavaScript", "SASS", "Bootstrap"]
+        "projectImages": [],
+        "github": "https://github.com/jasir3124/Movie-website",
+        "stack": ["HTML", "JavaScript", "SASS", "Bootstrap"],
+        "status": "finished",
+        "projectSize": "small"
     }
 ]
