@@ -6,7 +6,7 @@ function HeroSection(props) {
     return (
         <>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center px-4 md:px-8 lg:px-16 gap-8 lg:gap-0">
-                <div className="flex flex-col items-center lg:items-start justify-self-center lg:justify-self-end w-full lg:w-3/4 space-y-3 text-center lg:text-left lg:mb-20 md:mt-10 sm:mt-10">
+                <div className="flex flex-col items-center lg:items-start justify-self-center lg:justify-self-end w-full lg:w-3/4 space-y-3 text-center lg:text-left lg:mb-20 mt-10">
                     <h1 className="text-maroon text-6xl md:text-5xl lg:text-6xl font-Japanenglish"
                         >Jasir Limani a <br /> Software Engineer</h1>
                     <p className="text-xl md:text-3xl font-sans">I'm a software engineer specializing in web and mobile app
@@ -23,8 +23,10 @@ function HeroSection(props) {
                             style={{ objectFit: 'contain' }}
                             priority
                         />
-                        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 lg:h-40 bg-gradient-to-t from-white via-white/95 to-transparent"></div>
+                        <div className="absolute lg:bottom-0 md:bottom-[-25px] bottom-[-25px] left-1/2 -translate-x-1/2 w-full h-24 bg-white/100 blur-xl rounded-full z-10" />
                     </div>
+
+                    
                 </div>
             </div>
 

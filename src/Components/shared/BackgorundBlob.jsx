@@ -26,7 +26,7 @@ const generateRandomBlob = (i) => {
 
 const BackgroundBlob = ({ count = 5 }) => {
     return (
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden -z-10">
             {[...Array(count)].map((_, i) => generateRandomBlob(i))}
         </div>
     );

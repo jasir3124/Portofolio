@@ -8,7 +8,7 @@ const SkillsSection = () => {
     return (
         <div className="sm:ms-10">
             <div className="flex items-center gap-2 sm:gap-3 md:gap-4 mb-7 md:mb-10 ms-5 sm:ms-0">
-                <h1 className="text-4xl text-gold font-Japanenglish">Skills</h1>
+                <h1 className="text-5xl text-gold font-Japanenglish">Skills</h1>
                 <div className="lg:w-1/4 md:w-1/5 sm:w-1/6 h-0.5 bg-maroon" />
             </div>
 

@@ -1,30 +1,61 @@
 import React from 'react';
-import { FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 import Link from 'next/link';
-import Image from 'next/image';
+
+import { FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 
 const ContactSection = () => {
   return (
-    <section className="px-6 sm:px-10 lg:px-20 py-20 grid">
+    <section className="p-20 pt-0">
+
       {/* Heading */}
-      <div className="flex items-center gap-4 mb-6">
-        <h1 className="text-4xl font-Japanenglish text-gold">Contact</h1>
-        <div className="flex-1 h-0.5 bg-maroon max-w-[120px]" />
+      <div className="flex items-center gap-4 mb-12">
+        <h1 className="text-5xl font-Japanenglish text-gold tracking-widest">Contact</h1>
+        <div className="flex-1 h-[2px] bg-maroon max-w-[150px]" />
       </div>
 
+      {/* Content Grid */}
+      <div className="grid items-start">
+        {/* Left Column - Text */}
+        <div className="space-y-8">
+          <div className='space-y-4'>
+            <p className="text-lg text-gray-500 font-light italic">
+              Let's connect and create something meaningful.
+            </p>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Feel free to reach out — whether it's a project collaboration, a question, or just a friendly hello.
+              I'm always happy to connect with fellow developers, creatives, and potential collaborators.
+            </p>
+            <Link
+              href="/contact"
+              className="w-fit group relative flex items-center gap-2 font-semibold text-[20px] font-Japanenglish text-black cursor-pointer border-none bg-none p-0 m-0"
+            >
+              <p className="relative text-3xl transition-colors duration-300 group-hover:text-maroon">
+                Contact
+              </p>
 
-      {/* Content */}
-      <div className="max-w-full space-y-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div>
-          <p className="text-base text-gray-500 mb-10">
-            Let's connect and create something meaningful.
-          </p>
-          <p className="text-lg md:text-xl font-sans leading-relaxed">
-            Feel free to reach out — whether it's a project collaboration, a question, or just a friendly hello. I'm always happy to connect with fellow developers, creatives, and potential collaborators.
-          </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-[15px] h-[15px] text-black transition-transform duration-200 delay-200 group-hover:translate-x-1 group-hover:text-maroon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+
+              {/* Underline animation */}
+              <span className="absolute left-0 -bottom-[7px] h-[2px] w-0 bg-maroon transition-all duration-300 ease-out group-hover:w-full" />
+            </Link>
+
+          </div>
 
           {/* Social Icons */}
-          <div className="flex gap-6">
+          <div className="flex gap-6 pt-2">
             {[
               {
                 href: 'https://instagram.com/jasirlimani7',
@@ -47,17 +78,13 @@ const ContactSection = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 rounded-full border border-maroon text-maroon hover:text-gold hover:border-gold transition-all duration-200"
+                className="group p-3 rounded-full border border-maroon text-maroon hover:text-gold hover:border-gold transition-all duration-300 shadow-sm"
                 aria-label={label}
               >
                 <span className="text-2xl group-hover:scale-110 transition-transform">{icon}</span>
               </Link>
             ))}
           </div>
-        </div>
-
-        <div className='flex justify-center'>
-          <Image src="/images/dragon-no-background.png" alt="Contact" width={400} height={500} />
         </div>
       </div>
     </section>

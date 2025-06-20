@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import BackgroundBlob from "@/components/shared/BackgorundBlob";
 
 export const metadata = {
     title: "Jasir | Software Engineer",
@@ -11,6 +12,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body>
+            <BackgroundBlob count={20} />
         <Navbar/>
         {children}
         <Footer/>
