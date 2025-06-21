@@ -1,21 +1,34 @@
 [
     {
         "title": "OrderEase",
-        "description": "Full-stack car rental system built as a final course project. Includes user registration/login, car browsing with filters, single-rental restrictions, and real-time availability updates. Features paginated search, an admin dashboard with visualized data (graphs, charts), and basic user/car management. Built with PHP & MySQL — now archived as I’ve moved to the MERN stack.",
-        "image": "/project-images/OrderEase/Hero-Section.png",
-        "projectImages": [],
-        "github": "",
-        "stack": ["MERN", "Redux", "Tailwind", "Framer Motion"],
+        "description": "OrderEase is a modern restaurant order management platform designed to streamline communication between waitstaff and the kitchen. Inspired by my 4 years of experience in the food service industry, it helps staff take orders directly from a phone or tablet and sends them instantly to the kitchen. Once the dish is ready, the system notifies the waiter — improving efficiency and service speed. The app is still under active development, with plans to release a companion mobile app for full mobility.",
         "status": "working",
-        "projectSize": "big"
+        "projectSize": "big",
+        "image": "/project-images/OrderEase/Hero-Section.png",
+        "projectImages": [
+            "/project-images/OrderEase/image-1.png",
+            "/project-images/OrderEase/image-2.png"
+        ],
+        "github": "",
+        "stack": [
+            "MERN",
+            "Redux",
+            "Tailwind",
+            "Framer Motion"
+        ]
     },
     {
         "title": "WheelseAway",
         "description": "Full-stack car rental system built as a final course project. Includes user registration/login, car browsing with filters, single-rental restrictions, and real-time availability updates. Features paginated search, an admin dashboard with visualized data (graphs, charts), and basic user/car management. Built with PHP & MySQL — now archived as I’ve moved to the MERN stack.",
         "image": "/project-images/car-rental-System/Hero-Section.png",
-        "projectImages": [],
+        "projectImages": ["/project-images/car-rental-System/Home page.png", "/project-images/car-rental-System/About us page.png", "/project-images/car-rental-System/Car rent page.png", "/project-images/car-rental-System/Profile page.png", "/project-images/car-rental-System/Dashboard page.png"],
         "github": "https://github.com/jasir3124/WheelseAway-Car-rental-system",
-        "stack": ["PHP", "MySQL", "SASS", "Bootstrap"],
+        "stack": [
+            "PHP",
+            "MySQL",
+            "SASS",
+            "Bootstrap"
+        ],
         "status": "finished",
         "projectSize": "big"
     },
@@ -23,9 +36,13 @@
         "title": "Food App",
         "description": "A recipe discovery app with an intuitive interface for browsing dishes, viewing ingredients, and following step-by-step cooking guides. Designed to make the culinary journey easy, informative, and enjoyable.",
         "image": "/project-images/food-app/Hero-Section.png",
-        "projectImages": [],
+        "projectImages": ["/project-images/food-app/home page.png", "/project-images/food-app/Recipes page.png", "/project-images/food-app/settings page.png"],
         "github": "https://github.com/jasir3124/Food-app",
-        "stack": ["React.JS", "SASS", "Bootstrap"],
+        "stack": [
+            "React.JS",
+            "SASS",
+            "Bootstrap"
+        ],
         "status": "finished",
         "projectSize": "small"
     },
@@ -33,9 +50,14 @@
         "title": "Adze Movies",
         "description": "A lightweight movie browser that lets users search by title, filter by categories, and save or unsave favorite films. Built for speed and simplicity — ideal for practicing dynamic UI and state management.",
         "image": "/project-images/Adze-movie-website/Hero-Section.png",
-        "projectImages": [],
+        "projectImages": ["/project-images/Adze-movie-website/image-1.png", "/project-images/Adze-movie-website/image-2.png", "/project-images/Adze-movie-website/image-3.png"],
         "github": "https://github.com/jasir3124/Movie-website",
-        "stack": ["HTML", "JavaScript", "SASS", "Bootstrap"],
+        "stack": [
+            "HTML",
+            "JavaScript",
+            "SASS",
+            "Bootstrap"
+        ],
         "status": "finished",
         "projectSize": "small"
     }

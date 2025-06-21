@@ -2,6 +2,39 @@ import React from 'react';
 import projects from '@/data/projects.json';
 import ProjectsCard from '@/components/shared/ProjectsCard';
 
+export const metadata = {
+    title: "Projects",
+    description: "Explore Jasir Limani's portfolio of web development projects including OrderEase (restaurant management SaaS), WheelseAway (car rental system), Food App, and Adze Movies. Built with MERN stack, React, PHP, and modern technologies.",
+    keywords: [
+        "Jasir Limani Projects",
+        "OrderEase Restaurant Management",
+        "WheelseAway Car Rental",
+        "Food App Recipe Discovery",
+        "Adze Movies Browser",
+        "MERN Stack Projects",
+        "React Projects",
+        "Web Development Portfolio",
+        "Full-Stack Projects"
+    ],
+    openGraph: {
+        title: "Projects | Jasir Limani Portfolio",
+        description: "Explore Jasir Limani's portfolio of web development projects including OrderEase, WheelseAway, Food App, and Adze Movies.",
+        url: '/projects',
+        images: [
+            {
+                url: '/project-images/OrderEase/Hero-Section.png',
+                width: 1200,
+                height: 630,
+                alt: 'Jasir Limani Projects Portfolio',
+            },
+        ],
+    },
+    twitter: {
+        title: "Projects | Jasir Limani Portfolio",
+        description: "Explore Jasir Limani's portfolio of web development projects including OrderEase, WheelseAway, Food App, and Adze Movies.",
+    },
+};
+
 function Projects(props) {
 
     const workingProjects = projects.filter(project => project.status === 'working');

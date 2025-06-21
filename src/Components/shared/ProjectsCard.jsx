@@ -56,8 +56,8 @@ const ProjectsCard = (props) => {
 
             <div className='grid sm:flex justify-between gap-2'>
                 <a
-                    href={props.link}
-                    target="_blank"
+                    href={`/projects/${props.title}`}
+                    target="_self"
                     rel="noopener noreferrer"
                     className="inline-block text-sm font-bold bg-black text-white px-3 py-1 rounded-full shadow hover:bg-[#FFB22C] hover:text-black transition"
                 >

@@ -17,6 +17,36 @@ const skills = [
     "GitHub",
 ]
 
+export const metadata = {
+    title: "About Me",
+    description: "Learn more about Jasir Limani, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia. Discover my journey from programming at 14 to building OrderEase and other innovative projects.",
+    keywords: [
+        "About Jasir Limani",
+        "Full-Stack Developer Macedonia",
+        "Self-taught Programmer",
+        "OrderEase Developer",
+        "MERN Stack Developer",
+        "Young Developer Portfolio"
+    ],
+    openGraph: {
+        title: "About Jasir Limani | Full-Stack Developer",
+        description: "Learn more about Jasir Limani, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia. Discover my journey from programming at 14 to building OrderEase and other innovative projects.",
+        url: '/about',
+        images: [
+            {
+                url: '/images/portrait.png',
+                width: 1200,
+                height: 630,
+                alt: 'Jasir Limani - About Me',
+            },
+        ],
+    },
+    twitter: {
+        title: "About Jasir Limani | Full-Stack Developer",
+        description: "Learn more about Jasir Limani, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia.",
+    },
+};
+
 export default function AboutMe() {
     return (
         <main className="relative overflow-hidden w-full font-sans py-16">

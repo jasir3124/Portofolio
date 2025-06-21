@@ -1,0 +1,24 @@
+{
+  "name": "Jasir Limani - Full-Stack Developer",
+  "short_name": "Jasir Limani",
+  "description": "Portfolio of Jasir Limani, a full-stack developer from Macedonia",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#8B0000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
