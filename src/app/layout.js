@@ -1,7 +1,7 @@
 import "./globals.css";
-import Navbar from "../components/shared/Navbar.jsx";
-import Footer from "../components/shared/Footer.jsx";
-import BackgroundBlob from "../components/shared/BackgroundBlob.jsx";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import BackgroundBlob from "@/components/shared/BackgroundBlob";
 import ScrollToTop from "./ScrollToTop";
 
 export const metadata = {
