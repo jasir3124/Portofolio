@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import BackgroundBlob from "@/components/shared/BackgorundBlob";
+import ScrollToTop from "./ScrollToTop";
 
 export const metadata = {
     icons: {
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
             <body>
                 <BackgroundBlob count={20} />
                 <Navbar />
+                <ScrollToTop />
                 {children}
                 <Footer />
             </body>
