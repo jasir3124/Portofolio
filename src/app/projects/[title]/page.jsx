@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 import projects from '@/data/projects.json';
 
-import ProjectGallery from '@/components/projects/ProjectGallery.jsx';
+import ProjectGallery from '@/Components/projects/ProjectGallery.jsx';
 
 
 export default function ProjectPage(props) {

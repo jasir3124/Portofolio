@@ -1,6 +1,6 @@
 import React from 'react';
 import projects from '@/data/projects.json';
-import ProjectsCard from '@/components/shared/ProjectsCard';
+import ProjectsCard from '@/Components/shared/ProjectsCard';
 
 export const metadata = {
     title: "Projects",

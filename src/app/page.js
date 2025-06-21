@@ -1,9 +1,9 @@
 import Image from "next/image";
-import HeroSection from "@/components/Home/HeroSection.jsx";
-import ProjectsSection from "@/components/Home/ProjectsSection.jsx";
-import SkillsSection from "@/components/Home/SkillsSection.jsx";
-import AboutSection from "@/components/Home/AboutSection.jsx";
-import ContactSection from "@/components/Home/ContactSection.jsx";
+import HeroSection from "@/Components/Home/HeroSection.jsx";
+import ProjectsSection from "@/Components/Home/ProjectsSection.jsx";
+import SkillsSection from "@/Components/Home/SkillsSection.jsx";
+import AboutSection from "@/Components/Home/AboutSection.jsx";
+import ContactSection from "@/Components/Home/ContactSection.jsx";
 
 export const metadata = {
     title: "Home",
