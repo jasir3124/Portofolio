@@ -19,6 +19,8 @@ export const metadata = {
         ],
         other: [
             { rel: 'web-app-manifest', url: '/site.webmanifest' },
+            { rel: 'icon', type: 'image/x-icon', url: '/favicon.ico' },
+            { rel: 'icon', type: 'image/svg+xml', url: '/favicon.svg' },
         ],
     },
     title: {
@@ -97,10 +99,6 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="/favicon.ico" sizes="any" />
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-                <link rel="manifest" href="/site.webmanifest" />
                 <meta name="theme-color" content="#8B0000" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </head>
