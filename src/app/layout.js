@@ -89,9 +89,7 @@ export const metadata = {
         },
     },
     verification: {
-        google: 'your-google-verification-code', // Add your Google Search Console verification code
-        // yandex: 'your-yandex-verification-code',
-        // yahoo: 'your-yahoo-verification-code',
+        google: 'rtEImrSFM19Q8-MyJaXL4gsq-M6nxjSPsl-XRsVG5CA',
     },
 };
 
@@ -99,8 +97,12 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <meta name="theme-color" content="#8B0000" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <head>
+                    <meta name="theme-color" content="#8B0000" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="icon" href="/favicon.ico" />
+                </head>
+
             </head>
             <body>
                 <BackgroundBlob count={20} />
