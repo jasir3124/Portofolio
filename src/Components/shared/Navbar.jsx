@@ -22,11 +22,11 @@ function Navbar() {
         <>
             {/* Top Navbar */}
             <div className="flex justify-between items-center p-3 backdrop-blur-3xl border-b-2 border-gray-200">
-                <h1
-                    className="text-gold text-2xl font-Japanenglish tracking-widest"
-                >
-                    Jasir
-                </h1>
+                <Link href="/">
+                    <h1 className="text-gold text-2xl font-Japanenglish tracking-widest">
+                        Jasir
+                    </h1>
+                </Link>
 
                 {/* Desktop Nav */}
                 <div className="sm:flex hidden justify-between items-center">

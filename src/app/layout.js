@@ -4,6 +4,8 @@ import Footer from "@/Components/shared/Footer.jsx";
 import BackgroundBlob from "@/Components/shared/BackgroundBlob.jsx";
 import ScrollToTop from "./ScrollToTop";
 
+import { Analytics } from "@vercel/analytics/next"
+
 export const metadata = {
     icons: {
         icon: [
@@ -108,6 +110,7 @@ export default function RootLayout({ children }) {
                 <ScrollToTop />
                 {children}
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );

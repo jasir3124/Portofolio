@@ -7,6 +7,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
+  const recaptchaRef = useRef(null);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -16,9 +17,10 @@ export default function Contact() {
   function canSendEmail() {
     const submissions = JSON.parse(localStorage.getItem("email_submissions")) || [];
     const now = Date.now();
-    const recent = submissions.filter((t) => now - t < 24 * 60 * 60 * 1000);
+    const twoHoursInMs = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+    const recent = submissions.filter((t) => now - t < twoHoursInMs);
 
-    if (recent.length >= 2) return false;
+    if (recent.length >= 1) return false;
 
     recent.push(now);
     localStorage.setItem("email_submissions", JSON.stringify(recent));
@@ -36,11 +38,10 @@ export default function Contact() {
     }
 
     if (!canSendEmail()) {
-      setStatus({ type: "error", message: "You’ve reached the submission limit (2/day)." });
+      setStatus({ type: "error", message: "You've reached the submission limit (1/2 hours)." });
       return;
     }
 
-    
     try {
       if (!form.recaptchaToken) {
         setStatus({ type: "error", message: "Please complete the reCAPTCHA." });
@@ -65,6 +66,11 @@ export default function Contact() {
 
       setStatus({ type: "success", message: "Thanks for reaching out! I'll get back to you soon." });
       setForm({ name: "", email: "", message: "" });
+      
+      // Reset the reCAPTCHA after successful submission
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
     } catch (error) {
       setStatus({ type: "error", message: error.message || "Something went wrong. Please try again later." });
     } finally {
@@ -186,6 +192,7 @@ export default function Contact() {
             )}
 
             <ReCAPTCHA
+              ref={recaptchaRef}
               sitekey="6Lfc-GcrAAAAALr027oyVc8qGWMX50JavjB3PU_9"
               onChange={(token) => {
                 setForm(prev => ({ ...prev, recaptchaToken: token }));
