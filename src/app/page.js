@@ -39,12 +39,12 @@ export const metadata = {
 
 export default function Home() {
     return (
-        <div className='space-y-20 sm:space-y-20 lg:space-y-28'>
+        <main className='space-y-20 sm:space-y-20 lg:space-y-28'>
             <HeroSection/>
             <ProjectsSection/>
             <SkillsSection/>
             <AboutSection />
             <ContactSection />
-        </div>
+        </main>
     );
 }

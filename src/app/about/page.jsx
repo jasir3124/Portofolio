@@ -55,10 +55,10 @@ export default function AboutMe() {
             {/* Content container */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24">
                 {/* Subtle background dragon */}
-                <div className="absolute -right-10 top-20 opacity-10 z-0 max-w-[600px] hidden md:block pointer-events-none">
+                <div aria-hidden="true" className="absolute -right-10 top-20 opacity-10 z-0 max-w-[600px] hidden md:block pointer-events-none">
                     <Image
                         src={"/images/dragon-no-background.png"}
-                        alt="Japanese dragon"
+                        alt=""
                         width={600}
                         height={600}
                         priority
@@ -78,13 +78,13 @@ export default function AboutMe() {
                     {/* Bio */}
                     <div className="space-y-6 text-lg md:text-xl leading-relaxed">
                         <p>
-                            Hi, I'm <span className="text-maroon font-bold">Jasir Limani</span>, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia.
+                            Hi, I'm <strong className="text-maroon">Jasir Limani</strong>, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia.
                         </p>
                         <p>
                             I started programming at 14 because I love building tools and solving problems. What began as a hobby turned into a passion for clean, practical, and elegant software.
                         </p>
                         <p>
-                            I'm currently focused on <span className="text-gold font-bold">OrderEase</span>, a SaaS platform to simplify restaurant order management, inspired by my own experience in the restaurant industry.
+                            I'm currently focused on <strong className="text-gold">OrderEase</strong>, a SaaS platform to simplify restaurant order management, inspired by my own experience in the restaurant industry.
                         </p>
                         <p>
                             My mission: create software that makes life easier, smarter, and more meaningful.

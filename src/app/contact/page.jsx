@@ -20,7 +20,7 @@ export default function Contact() {
     const twoHoursInMs = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
     const recent = submissions.filter((t) => now - t < twoHoursInMs);
 
-    if (recent.length >= 1) return false;
+    if (recent.length >= 2) return false;
 
     recent.push(now);
     localStorage.setItem("email_submissions", JSON.stringify(recent));
@@ -38,7 +38,7 @@ export default function Contact() {
     }
 
     if (!canSendEmail()) {
-      setStatus({ type: "error", message: "You've reached the submission limit (1/2 hours)." });
+      setStatus({ type: "error", message: "You've reached the submission limit (2/2 hours)." });
       return;
     }
 

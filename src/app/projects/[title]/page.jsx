@@ -23,7 +23,7 @@ export default function ProjectPage(props) {
     if (!project) {
         return (
             <div className="p-8 font-sans text-maroon">
-                <h1 className="text-3xl font-japanenglish mb-4">Project Not Found</h1>
+                <h2 className="text-3xl font-japanenglish mb-4">Project Not Found</h2>
                 <p>No project matches the title: {title}</p>
             </div>
         );

@@ -5,11 +5,11 @@ import { FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 
 const ContactSection = () => {
   return (
-    <section className="p-20 pt-0">
+    <section aria-labelledby="contact-heading" className="p-20 pt-0">
 
       {/* Heading */}
       <div className="flex items-center gap-4 mb-12">
-        <h1 className="text-5xl font-Japanenglish text-gold tracking-widest">Contact</h1>
+        <h2 id="contact-heading" className="text-5xl font-Japanenglish text-gold tracking-widest">Contact</h2>
         <div className="flex-1 h-[2px] bg-maroon max-w-[150px]" />
       </div>
 
@@ -29,9 +29,9 @@ const ContactSection = () => {
               href="/contact"
               className="w-fit group relative flex items-center gap-2 font-semibold text-[20px] font-Japanenglish text-black cursor-pointer border-none bg-none p-0 m-0"
             >
-              <p className="relative text-3xl transition-colors duration-300 group-hover:text-maroon">
+              <span className="relative text-3xl transition-colors duration-300 group-hover:text-maroon">
                 Contact
-              </p>
+              </span>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
