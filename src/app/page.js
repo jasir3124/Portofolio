@@ -39,8 +39,8 @@ export const metadata = {
 
 export default function Home() {
     return (
-        <main className='space-y-20 sm:space-y-20 lg:space-y-28'>
-            <HeroSection/>
+        <main aria-labelledby={"home-title"} className='space-y-20 sm:space-y-20 lg:space-y-28'>
+            <HeroSection mainLable={"home-title"}/>
             <ProjectsSection/>
             <SkillsSection/>
             <AboutSection />

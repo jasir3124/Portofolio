@@ -8,7 +8,7 @@ function HeroSection(props) {
             <section className="grid grid-cols-1 lg:grid-cols-2 items-center px-4 md:px-8 lg:px-16 gap-8 lg:gap-0">
                 <div
                     className="flex flex-col items-center lg:items-start justify-self-center lg:justify-self-end w-full lg:w-3/4 space-y-3 text-center lg:text-left lg:mb-20 mt-10">
-                    <h1 className="text-maroon text-6xl md:text-5xl lg:text-6xl font-Japanenglish"
+                    <h1 id={props.mainLable} className="text-maroon text-6xl md:text-5xl lg:text-6xl font-Japanenglish"
                     >Jasir Limani a <br/> Software Engineer</h1>
                     <span className="text-xl md:text-3xl font-sans">
   I'm a software engineer specializing in website and mobile app development, crafting fast, scalable, and reliable solutions that drive real results.
