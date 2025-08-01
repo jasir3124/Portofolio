@@ -23,9 +23,9 @@ function Navbar() {
             {/* Top Navbar */}
             <div className="flex justify-between items-center p-3 backdrop-blur-3xl border-b-2 border-gray-200">
                 <Link href="/">
-                    <h1 className="text-gold text-2xl font-Japanenglish tracking-widest">
+                    <h5 className="text-gold text-2xl font-Japanenglish tracking-widest">
                         Jasir
-                    </h1>
+                    </h5>
                 </Link>
 
                 {/* Desktop Nav */}

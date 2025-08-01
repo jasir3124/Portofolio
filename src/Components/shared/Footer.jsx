@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="bg-[#F8F0E3] text-[#B22222] font-Japanenglish px-6 sm:px-10 lg:px-20 py-10 overflow-x-hidden">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-4">
                 <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-                    <h1 className="text-3xl text-gold">Jasir</h1>
+                    <h5 className="text-3xl text-gold">Jasir</h5>
                     <p className="text-sm sm:text-lg break-words">jasirlimani12@gmail.com</p>
                 </div>
 
