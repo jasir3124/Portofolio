@@ -15,7 +15,7 @@ export default function ProjectPage(props) {
 
     useEffect(() => {
         async function fetchProject() {
-            const {createClient} = await import('@/lib/supabase/client');
+            const {createClient} = await import('@/../lib/supabase/client');
             const supabase = createClient();
 
             const {data, error} = await supabase
