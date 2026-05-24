@@ -1,6 +1,8 @@
 import React from 'react';
-import projects from '@/data/projects.json';
+
 import ProjectsCard from '@/Components/shared/ProjectsCard';
+
+import { getProjects } from "@/../lib/supabase/queries"
 
 export const metadata = {
     title: "Projects",
@@ -35,7 +37,8 @@ export const metadata = {
     },
 };
 
-function Projects(props) {
+async function Projects(props) {
+    const projects = await getProjects();
 
     const workingProjects = projects.filter(project => project.status === 'working');
     const finishedProjects = projects.filter(project => project.status === 'finished');
@@ -61,9 +64,6 @@ function Projects(props) {
                     ))}
                 </div>
             </section>
-
-
-
         </main>
     );
 }

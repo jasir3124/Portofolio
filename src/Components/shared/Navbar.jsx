@@ -19,7 +19,7 @@ function Navbar() {
     ];
 
     return (
-        <navbar>
+        <nav>
             {/* Top Navbar */}
             <div className="flex justify-between items-center p-3 backdrop-blur-3xl border-b-2 border-gray-200">
                 <Link href="/">
@@ -88,7 +88,7 @@ function Navbar() {
                     ))}
                 </div>
             </div>
-        </navbar>
+        </nav>
     );
 }
 

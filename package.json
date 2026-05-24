@@ -11,6 +11,8 @@
     "build": "npm run clean && next build"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.106.1",
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.18.1",
     "next": "15.3.3",
