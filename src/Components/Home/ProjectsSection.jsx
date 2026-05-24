@@ -1,14 +1,11 @@
 import React from 'react'
 import Link from "next/link";
-
 import { CgArrowLongRight } from "react-icons/cg";
+import { getProjects } from '@/../lib/supabase/queries';
+import ProjectsCard from '../shared/ProjectsCard';
 
-import projects from '@/data/projects.json'
-import ProjectsCard from '../shared/ProjectsCard'
-
-
-const ProjectsSection = () => {
-
+const ProjectsSection = async () => {
+    const projects = await getProjects();
     const featuredProjects = projects.slice(0, 3);
 
     return (

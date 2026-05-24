@@ -1,24 +1,37 @@
 'use client';
 
-import React from 'react';
-
-import { useRouter } from 'next/navigation';
+import React, {useState, useEffect} from 'react';
+import {useRouter} from 'next/navigation';
 import Image from 'next/image';
-
-import projects from '@/data/projects.json';
-
 import ProjectGallery from '@/Components/projects/ProjectGallery.jsx';
-
 
 export default function ProjectPage(props) {
     const router = useRouter();
-
     const params = React.use(props.params);
-    const title = params.title;
-  
-    const project = projects.find(
-      (p) => p.title.toLowerCase().trim() === decodeURIComponent(title).toLowerCase().trim()
-    );
+    const title = decodeURIComponent(params.title);
+
+    const [project, setProject] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        async function fetchProject() {
+            const {createClient} = await import('@/lib/supabase/client');
+            const supabase = createClient();
+
+            const {data, error} = await supabase
+                .from('projects')
+                .select('*')
+                .ilike('title', title)
+                .single();
+
+            if (!error) setProject(data);
+            setLoading(false);
+        }
+
+        fetchProject();
+    }, [title]);
+
+    if (loading) return <div className="p-8 text-maroon">Loading...</div>;
 
     if (!project) {
         return (
@@ -70,7 +83,7 @@ export default function ProjectPage(props) {
             <section className="mb-8">
                 <h2 className="text-2xl font-japanenglish mb-4 text-gold">Gallery</h2>
                 <div className="flex gap-6 overflow-x-auto">
-                    <ProjectGallery images={project.projectImages} />
+                    <ProjectGallery images={project.projectImages}/>
                 </div>
             </section>
 
