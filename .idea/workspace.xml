@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="51b292e0-9951-4ca3-9f3e-b1bf44fbdda9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/projects/ProjectGallery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/projects/ProjectGallery.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/shared/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/shared/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/[title]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[title]/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +37,69 @@
     &quot;accountId&quot;: &quot;8e26c7d6-e6ec-4389-bde5-94d63b4f2759&quot;
   }
 }</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000017966457" />
+      <entry key="S2" value="1.015037811477976" />
+      <entry key="S5" value="1.272613399661419" />
+      <entry key="S10" value="1.7706651087171086" />
+      <entry key="S30" value="2.9666362959530233" />
+      <entry key="S60" value="3.7991876580129618" />
+      <entry key="M2" value="4.6976369147252175" />
+      <entry key="M5" value="6.231186999996524" />
+      <entry key="M10" value="7.514198288580016" />
+      <entry key="M15" value="8.158874130070327" />
+      <entry key="M30" value="8.969984787206108" />
+      <entry key="H1" value="9.45372712338122" />
+      <entry key="H2" value="9.718495753711842" />
+      <entry key="H4" value="9.857082555875156" />
+      <entry key="D1" value="9.975873241592803" />
+      <entry key="W1" value="9.996545711788023" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.22221067029164254" />
+      <entry key="MS500" value="0.7402066622718803" />
+      <entry key="S2" value="0.9408720458252722" />
+      <entry key="S5" value="1.2264061559157504" />
+      <entry key="S10" value="1.7286224761288231" />
+      <entry key="S30" value="2.9321362728251725" />
+      <entry key="S60" value="3.7727791000356548" />
+      <entry key="M2" value="4.677952992158587" />
+      <entry key="M5" value="6.2189584888067815" />
+      <entry key="M10" value="7.506587966543935" />
+      <entry key="M15" value="8.15334737953146" />
+      <entry key="M30" value="8.96695163382091" />
+      <entry key="H1" value="9.45213328544235" />
+      <entry key="H2" value="9.717678111765993" />
+      <entry key="H4" value="9.856668365413976" />
+      <entry key="D1" value="9.975803447432074" />
+      <entry key="W1" value="9.996535722300594" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -41,24 +109,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Main&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/programming/projekete/projects/portofolio/src/app/projects&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Admin\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "C:/Users/Admin/Documents/programming/projekete/projects/portofolio/src/app/projects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Admin\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\programming\projekete\projects\portofolio\src\app\projects" />
@@ -92,7 +164,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
       </set>
     </attachedChunks>
   </component>
@@ -115,6 +187,9 @@
       <workItem from="1766833220614" duration="2211000" />
       <workItem from="1766869373858" duration="8782000" />
       <workItem from="1767631915739" duration="84000" />
+      <workItem from="1779659894586" duration="3969000" />
+      <workItem from="1779716315897" duration="51000" />
+      <workItem from="1788196386739" duration="2208000" />
     </task>
     <servers />
   </component>

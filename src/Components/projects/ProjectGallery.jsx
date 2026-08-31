@@ -1,3 +1,5 @@
+// noinspection D
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -5,6 +7,8 @@ import Image from 'next/image';
 
 const ProjectGallery = ({ images }) => {
     const [activeImageIndex, setActiveImageIndex] = useState(null);
+
+    console.log(images);
 
     // Keyboard navigation
     useEffect(() => {

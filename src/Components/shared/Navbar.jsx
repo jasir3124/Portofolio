@@ -1,93 +1,127 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const pathname = usePathname();
 
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
     function toggleMenu() {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen((prev) => !prev);
     }
 
     const navItems = [
         { href: '/', label: 'Home' },
         { href: '/projects', label: 'Projects' },
         { href: '/about', label: 'About' },
-        { href: '/contact', label: 'Contact' }
+        { href: '/contact', label: 'Contact' },
     ];
 
-    return (
-        <nav>
-            {/* Top Navbar */}
-            <div className="flex justify-between items-center p-3 backdrop-blur-3xl border-b-2 border-gray-200">
-                <Link href="/">
-                    <h5 className="text-gold text-2xl font-Japanenglish tracking-widest">
-                        Jasir
-                    </h5>
-                </Link>
+    useEffect(() => {
+        if (!isMenuOpen) return;
 
-                {/* Desktop Nav */}
-                <div className="sm:flex hidden justify-between items-center">
-                    <div className="flex gap-7 text-2xl font-Japanenglish" >
-                        {navItems.map(({ href, label }) => (
+        document.body.style.overflow = 'hidden';
+
+        function handleKeyDown(e) {
+            if (e.key === 'Escape') setIsMenuOpen(false);
+        }
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.body.style.overflow = '';
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [isMenuOpen]);
+
+    const mobileMenu = (
+        <>
+            {isMenuOpen && (
+                <div
+                    className="fixed inset-0 h-screen w-screen bg-black/50 z-40 transition-opacity duration-300"
+                    onClick={toggleMenu}
+                    aria-hidden="true"
+                />
+            )}
+            <div
+                id="mobile-menu"
+                role="dialog"
+                aria-modal="true"
+                aria-hidden={!isMenuOpen}
+                className={`fixed right-0 top-0 h-screen w-64 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
+                    isMenuOpen ? 'translate-x-0' : 'translate-x-full pointer-events-none'
+                }`}
+            >
+                <div className="flex flex-col items-end h-full text-2xl pt-10 pe-6 gap-8 font-Japanenglish">
+                    {navItems.map(({ href, label }) => {
+                        const active = pathname === href;
+                        return (
                             <Link
                                 key={href}
                                 href={href}
-                                className={`transition-all ${
-                                    pathname === href
-                                        ? 'animate-bounce [animation-duration:2s] text-gold'
-                                        : 'text-black'
+                                onClick={toggleMenu}
+                                className={`pb-1 transition-colors ${
+                                    active ? 'text-maroon border-b-2 border-gold' : 'text-black hover:text-maroon'
                                 }`}
-                                style={{ marginRight: 10, textDecoration: 'none' }}
                             >
                                 {label}
                             </Link>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Mobile Hamburger */}
-                <div className="sm:hidden flex flex-col items-center justify-center">
-                    <button onClick={toggleMenu} className="text-2xl">
-                        <div className="w-6 h-0.5 bg-black mb-1.5"></div>
-                        <div className="w-6 h-0.5 bg-black mb-1.5"></div>
-                        <div className="w-6 h-0.5 bg-black"></div>
-                    </button>
+                        );
+                    })}
                 </div>
             </div>
+        </>
+    );
 
-            {/* Overlay */}
-            {isMenuOpen && (
-                <div
-                    className="fixed inset-0 h-screen w-screen bg-black bg-opacity-50 z-40 transition-opacity duration-300"
+    return (
+        <nav className="sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-gold/30 shadow-sm">
+            <div className="flex justify-between items-center px-4 sm:px-8 py-4">
+                <Link href="/" className="text-gold text-2xl font-Japanenglish tracking-widest hover:text-gold/80 transition-colors">
+                    Jasir
+                </Link>
+
+                <div className="hidden sm:flex items-center gap-10 text-xl font-Japanenglish">
+                    {navItems.map(({ href, label }) => {
+                        const active = pathname === href;
+                        return (
+                            <Link
+                                key={href}
+                                href={href}
+                                className={`group relative py-1 transition-colors ${
+                                    active ? 'text-maroon' : 'text-black hover:text-maroon'
+                                }`}
+                            >
+                                {label}
+                                <span
+                                    className={`absolute left-0 -bottom-1 h-[2px] bg-gold transition-all duration-300 ease-out ${
+                                        active ? 'w-full' : 'w-0 group-hover:w-full'
+                                    }`}
+                                />
+                            </Link>
+                        );
+                    })}
+                </div>
+
+                <button
                     onClick={toggleMenu}
-                />
-            )}
-
-            {/* Mobile Sidebar */}
-            <div
-                className={`fixed right-0 top-0 h-screen w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
-                    isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                }`}
-            >
-                <div className="flex flex-col items-end h-full text-2xl pt-10 pe-5 space-y-10 font-Japanenglish">
-                    {navItems.map(({ href, label }) => (
-                        <Link
-                            key={href}
-                            href={href}
-                            onClick={toggleMenu}
-                            className={`${
-                                pathname === href ? 'text-gold border-b-2 border-gold pb-2' : 'text-black'
-                            }`}
-                            style={{ marginRight: 10, textDecoration: 'none' }}
-                        >
-                            {label}
-                        </Link>
-                    ))}
-                </div>
+                    aria-label="Toggle menu"
+                    aria-expanded={isMenuOpen}
+                    aria-controls="mobile-menu"
+                    className="sm:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8"
+                >
+                    <span className={`block w-6 h-0.5 bg-maroon transition-transform duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                    <span className={`block w-6 h-0.5 bg-maroon transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`} />
+                    <span className={`block w-6 h-0.5 bg-maroon transition-transform duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+                </button>
             </div>
+
+            {mounted && createPortal(mobileMenu, document.body)}
         </nav>
     );
 }
