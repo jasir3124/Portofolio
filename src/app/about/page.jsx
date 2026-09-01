@@ -19,7 +19,7 @@ const skills = [
 
 export const metadata = {
     title: "About Me",
-    description: "Learn more about Jasir Limani, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia. Discover my journey from programming at 14 to building OrderEase and other innovative projects.",
+    description: "Learn more about Jasir Limani, a 18-year-old self-taught full-stack developer from Zhelinë, Macedonia. Discover my journey from programming at 14 to building OrderEase and other innovative projects.",
     keywords: [
         "About Jasir Limani",
         "Full-Stack Developer Macedonia",
@@ -30,7 +30,7 @@ export const metadata = {
     ],
     openGraph: {
         title: "About Jasir Limani | Full-Stack Developer",
-        description: "Learn more about Jasir Limani, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia. Discover my journey from programming at 14 to building OrderEase and other innovative projects.",
+        description: "Learn more about Jasir Limani, a 18-year-old self-taught full-stack developer from Zhelinë, Macedonia. Discover my journey from programming at 14 to building OrderEase and other innovative projects.",
         url: '/about',
         images: [
             {
@@ -43,7 +43,7 @@ export const metadata = {
     },
     twitter: {
         title: "About Jasir Limani | Full-Stack Developer",
-        description: "Learn more about Jasir Limani, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia.",
+        description: "Learn more about Jasir Limani, a 18-year-old self-taught full-stack developer from Zhelinë, Macedonia.",
     },
 };
 
@@ -78,7 +78,7 @@ export default function AboutMe() {
                     {/* Bio */}
                     <div className="space-y-6 text-lg md:text-xl leading-relaxed">
                         <p>
-                            Hi, I'm <strong className="text-maroon">Jasir Limani</strong>, a 17-year-old self-taught full-stack developer from Zhelinë, Macedonia.
+                            Hi, I'm <strong className="text-maroon">Jasir Limani</strong>, a 18-year-old self-taught full-stack developer from Zhelinë, Macedonia.
                         </p>
                         <p>
                             I started programming at 14 because I love building tools and solving problems. What began as a hobby turned into a passion for clean, practical, and elegant software.

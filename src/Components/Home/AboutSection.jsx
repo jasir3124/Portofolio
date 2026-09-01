@@ -24,7 +24,7 @@ function AboutSection() {
           {/* Text */}
           <div className="w-full max-w-prose">
             <p className="text-lg md:text-xl lg:text-2xl font-sans leading-relaxed text-left">
-              Hi, I'm <strong>Jasir Limani</strong> — a 17-year-old self-taught
+              Hi, I'm <strong>Jasir Limani</strong> — a 18-year-old self-taught
               full-stack developer from Zhelinë, Macedonia. I specialize in
               building clean, efficient web apps with React, Next.js, and the MERN
               stack. I'm currently working on <strong>OrderEase</strong>, a
